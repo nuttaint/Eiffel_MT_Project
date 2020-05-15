@@ -17,9 +17,25 @@
   <line x1="605" y1="430" x2="855" y2="518" style="stroke:black;stroke-width:2" />
   <line x1="855" y1="518" x2="855" y2="574" style="stroke:black;stroke-width:2" />
   <line x1="855" y1="574" x2="601" y2="678" style="stroke:black;stroke-width:2" />
-
   <!--------------------------------------------------------------------------------------------------------------/!-->
-
+  <!---------------เมฆหลัง----------------------------------------------------------/!-->
+    <g id="cloud2">
+    <ellipse cx="50" cy="40" rx="30" ry="30" fill="#fff">
+         <animate attributeName="cx" values="45;55;45" dur="1.5s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="30" cy="50" rx="30" ry="20" fill="#fff">
+         <animate attributeName="ry" values="20;25;20" dur="1s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="70" cy="50" rx="30" ry="20" fill="#fff">
+         <animate attributeName="ry" values="25;20;25" dur="1s" repeatCount="indefinite" />
+    </ellipse>
+    </g>
+    <animateTransform  xlink:href="#cloud2" attributeName="transform"
+                          type="translate"
+                          values="300 180;400 200;500 220;600 240; 700 260;600 240;500 220;400 200;300 180;"
+                          dur="15s"
+                          repeatCount="indefinite"/>
+  <!----------------------------------/!-->
   <!--พื้นสีน้ำตาล ซ้าย</!-->
 
   <polygon points="556,660 601,646 601,678" style="fill:rgb(163, 114, 73);" />      <!--สีน้ำตาลเข้ม</!-->
@@ -289,6 +305,24 @@
     <use x="313" y="48" xlink:href="#tree" />
     <use x="354" y="34" xlink:href="#tree" />
     <use x="400" y="20" xlink:href="#tree" />
+<!--------------เมฆหน้า----------------<!-->
+    <g id="cloud">
+    <ellipse cx="50" cy="40" rx="30" ry="30" fill="#fff">
+         <animate attributeName="cx" values="45;55;45" dur="1.5s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="30" cy="50" rx="30" ry="20" fill="#fff">
+         <animate attributeName="ry" values="20;25;20" dur="1s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="70" cy="50" rx="30" ry="20" fill="#fff">
+         <animate attributeName="ry" values="25;20;25" dur="1s" repeatCount="indefinite" />
+    </ellipse>
+    </g>
+<animateTransform  xlink:href="#cloud" attributeName="transform"
+                          type="translate"
+                          values="800 100;700 120;600 130;500 150;400 170; 500 150;600 130; 700 120;800 100;"
+                          dur="20s"
+                          repeatCount="indefinite"/>
+<!----------------------------------------<!-->
 </svg>
 </body>
 </html>
